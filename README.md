@@ -14,7 +14,7 @@
    git clone https://github.com/FalahRafif/SIGASI.git
    ```
 
-2. Pindahkan folder (SIGASI) hasil clone ke direktori Xampp/htdocs/disini (Jika memakai xampp).
+2. Pindahkan folder (SIGASI) hasil clone ke direktori Xampp/htdocs/disini (**Jika memakai xampp**).
 
 3. Buka Vscode, buka folder dan pilih SIGASI yang tadi sudah di-clone.
 
