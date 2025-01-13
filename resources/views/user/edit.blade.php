@@ -8,9 +8,9 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header bg-dark text-white">Update Data User </div>
+                    <div class="card-header">Update Data User </div>
 
-                    <div class="card-body bg-dark text-white">
+                    <div class="card-body">
                         <form method="POST" action="{{ route('user.update', $user->id) }}">
                             @csrf
                             @method('PUT')
@@ -67,8 +67,10 @@
     <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
 
     <div class="col-md-6">
-        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="{{ old('password', $user->password) }}">
-
+        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="">
+        <span class="invalid-feedback" role="alert" style="display: block">
+            <strong>Jangan Di Isi Jika Tidak Merubah Passowrd!</strong>
+        </span>
         @error('password')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -81,7 +83,7 @@
     <label for="password-confirm" class="col-md-4 col-form-label text-md-end">Konfirmasi Password</label>
 
     <div class="col-md-6">
-        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" value="{{ old('password_confirmation', $user->password) }}">
+        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" value="">
     </div>
 </div>
 

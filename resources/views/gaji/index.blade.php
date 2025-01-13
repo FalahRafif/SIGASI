@@ -30,15 +30,15 @@
 
         <br />
         <!-- Project Card Example -->
-        <div class="card shadow mb-4 text-white">
-            <div class="card-header py-3 bg-dark">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
                 <a href="{{ route('gaji.create') }}" class="btn btn-warning float-right">
                     <i class="fas fa-plus-circle"></i> Tambah Transaksi
                 </a>
                 <h4 class="m-15 font-weight-bold">{{ __('Daftar Transaksi Gaji') }}</h4>
             </div>
-            <div class="card-body bg-dark">
-                <table id="dataTable" class="table table-bordered text-white" cellspacing="1"><br />
+            <div class="card-body">
+                <table id="dataTable" class="table table-bordered" cellspacing="1"><br />
                     <thead>
                         <tr align="center">
                             <th scope="col">#</th>

@@ -33,25 +33,26 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-dark-mode sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-dark-mode sidebar sidebar-dark accordion" id="accordionSidebar" style="background: #046cba">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
 
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-comments-dollar"></i>
+                    {{-- <i class="fas fa-comments-dollar"></i> --}}
+                    <img src="/img/landingPage/navbar-logo.png" style="max-height: 40px" alt="..." />
 
 
                 </div><br />
 
-                <div class="sidebar-brand-text mx-3">Sistem Penggajian</div>
+                <div class="sidebar-brand-text mx-3">SIGASI</div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="/dashboard">
                     <i class="fas fa-chart-line"></i>
                     <span>Dashboard</span></a>
@@ -178,7 +179,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-dark-mode topbar mb-4 static-top shadow text-white">
+                <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -348,7 +349,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">
+                                <span class="mr-2 d-none d-lg-inline text-gray-800 small">
 
                                     {{ config('app.name', 'Laravel') }}</span>
                             </a>
@@ -361,9 +362,10 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-warning-600 small">
-
-                                    {{ Auth::user()->name }}</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">
+                                    {{ Auth::user()->name }} 
+                                    
+                                </span>
                                 <img class="img-profile rounded-circle" src="/img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->

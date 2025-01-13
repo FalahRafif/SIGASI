@@ -3,12 +3,12 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-9 mb-10 mx-auto">
-                <div class="card shadow mb-4 text-white">
-                    <div class="card-header py-3 bg-dark">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3 ">
                         <h4 class="m-15">{{ __('Tambah Karyawan') }}</h4>
 
                     </div>
-                    <div class="card-body bg-dark">
+                    <div class="card-body ">
 
                         <form action="{{ route('karyawan.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf

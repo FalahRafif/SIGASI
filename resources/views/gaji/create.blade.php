@@ -5,9 +5,9 @@
         <div class="row justify-content-center">
             <div class="col-md-11">
                 <div class="card">
-                    <div class="card-header bg-dark text-white">Tambah Gaji</div>
+                    <div class="card-header">Tambah Gaji</div>
 
-                    <div class="card-body bg-dark text-white">
+                    <div class="card-body">
                         <form method="POST" action="{{ route('gaji.store') }}">
                             @csrf
 

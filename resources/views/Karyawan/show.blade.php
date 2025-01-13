@@ -4,8 +4,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-5">
-                <div class="card text-white bg-dark">
-                    <div class="card-header bg-dark">Detail Karyawan </div>
+                <div class="card">
+                    <div class="card-header">Detail Karyawan </div>
                     <br />
                     @if ($karyawan->photo)
                         <div class="form-group">

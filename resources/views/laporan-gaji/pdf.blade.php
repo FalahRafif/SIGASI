@@ -27,15 +27,15 @@
 
         th {
     padding: 10px;
-    border: 1px solid #ff3d3d;
+    border: 1px solid #046cba;
     text-align: center;
-    background-color: #ff3d3d;
+    background-color: #046cba;
     color: white; /* Menjadikan teks pada elemen th warna putih */
 }
 
 td {
     padding: 10px;
-    border: 1px solid #ff3d3d;
+    border: 1px solid #046cba;
     text-align: center;
 }
 

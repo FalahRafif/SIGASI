@@ -3,11 +3,11 @@
 @section('content')
 
 <div class="col-lg-12 mb-4 mx-auto">
-    <div class="card shadow mb-4 text-white">
-        <div class="card-header py-3 bg-dark">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
             <h4 class="m-15 font-weight-bold">{{ __('Laporan Gaji') }}</h4>
         </div>
-        <div class="card-body bg-dark">
+        <div class="card-body">
             <form action="{{ route('laporan.gaji.generate') }}" method="POST">
                 @csrf
                 <div class="form-group">
@@ -32,7 +32,7 @@
                         {{ config('app.nama_sekolah', 'Laravel') }}<br />
                        </h4>
                        <h5 align="center">  Periode: {{ $tanggal_mulai }} sampai {{ $tanggal_selesai }}</h5>
-                    <table class="table table-bordered text-white">
+                    <table class="table table-bordered">
                         <thead>
                             <tr>
                                 <th>Kode Gaji</th>

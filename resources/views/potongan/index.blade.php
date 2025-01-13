@@ -30,19 +30,20 @@
 
         <br />
         <!-- Project Card Example -->
-        <div class="card shadow mb-4 text-white">
-            <div class="card-header py-3 bg-dark">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
                 <a href="#" class="btn btn-warning float-right" data-toggle="modal" data-target="#addPotonganModal">
                     <i class="fas fa-plus-circle"></i> Tambah Potongan
                 </a>
                 <h4 class="m-15 font-weight-bold">{{ __('Daftar Potongan') }}</h4>
             </div>
-            <div class="card-body bg-dark">
-                <table id="dataTable" class="table table-bordered text-white" cellspacing="1"><br />
+            <div class="card-body">
+                <table id="dataTable" class="table table-bordered" cellspacing="1"><br />
                     <thead>
                         <tr align="center">
                             <th style="width: 5%">#</th>
-                            <th style="width: 20%">Nama</th>
+                            <th style="width: 5%">Nama Potongan</th>
+                            <th style="width: 20%">Nama Karyawan</th>
                             <th style="width: 20%">Jumlah</th>
                             <th style="width: 15%">Aksi</th>
                         </tr>
@@ -52,6 +53,7 @@
                             <tr align="center">
                                 <td>{{ $index + 1 }}</td>
                                 <td>{{ $potonganItem->nama_potongan }}</td>
+                                <td>{{ $potonganItem->karyawan->nama_karyawan }}</td>
                                 <td>Rp. {{ number_format($potonganItem->jumlah_potongan, 2, ',', '.') }}</td>
                                 <td>
                                     <a href="{{ route('potongan.edit', $potonganItem->id) }}" class="btn btn-sm btn-info">

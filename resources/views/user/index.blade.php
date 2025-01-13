@@ -54,8 +54,8 @@
 
         <br />
         <!-- Project Card Example -->
-        <div class="card shadow mb-4 text-white">
-            <div class="card-header py-3 bg-dark">
+        <div class="card mb-4">
+            <div class="card-header py-3">
 
                 <a href="#" class="btn btn-warning float-right" data-toggle="modal" data-target="#addUserModal">
                     <i class="fas fa-plus-circle"></i> Tambah User
@@ -63,9 +63,9 @@
                 {{-- {{ __('Daftar User') }} --}}
                 <h4 class="m-15 font-weight-bold">{{ __('Daftar User') }}</h4>
             </div>
-            <div class="card-body bg-dark">
+            <div class="card-body">
 
-                <table id="dataTable" class="table table-bordered text-white" cellspacing="1"><br />
+                <table id="dataTable" class="table table-bordered " cellspacing="1"><br />
                     <thead>
                         <tr align="center">
                             <th style="width: 5%">#</th>
@@ -183,7 +183,7 @@
                                                         class="col-md-4 col-form-label text-md-end">Role</label>
                                                     <div class="col-md-6">
                                                         <select id="role"
-                                                            class="form-select @error('role') is-invalid @enderror"
+                                                            class="form-control form-select @error('role') is-invalid @enderror"
                                                             name="role" required autocomplete="role" autofocus>
 
                                                             <option value ="">

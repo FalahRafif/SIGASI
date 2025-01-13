@@ -30,19 +30,20 @@
 
         <br />
         <!-- Project Card Example -->
-        <div class="card shadow mb-4 text-white">
-            <div class="card-header py-3 bg-dark">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
                 <a href="#" class="btn btn-warning float-right" data-toggle="modal" data-target="#addTunjanganModal">
                     <i class="fas fa-plus-circle"></i> Tambah Tunjangan
                 </a>
                 <h4 class="m-15 font-weight-bold">{{ __('Daftar Tunjangan') }}</h4>
             </div>
-            <div class="card-body bg-dark">
-                <table id="dataTable" class="table table-bordered text-white" cellspacing="1">
+            <div class="card-body">
+                <table id="dataTable" class="table table-bordered" cellspacing="1">
                     <thead>
                         <tr align="center">
                             <th style="width: 5%">#</th>
-                            <th style="width: 20%">Nama</th>
+                            <th style="width: 5%">Nama Tunjangan</th>
+                            <th style="width: 20%">Nama Karyawan</th>
                             <th style="width: 20%">Jumlah</th>
                             <th style="width: 15%">Aksi</th>
                         </tr>
@@ -52,6 +53,7 @@
                             <tr align="center">
                                 <td>{{ $index + 1 }}</td>
                                 <td>{{ $tunjanganItem->nama_tunjangan }}</td>
+                                <td>{{ $tunjanganItem->karyawan->nama_karyawan }}</td>
                                 <td>Rp. {{ number_format($tunjanganItem->jumlah_tunjangan, 2, ',', '.') }}</td>
                                 <td>
                                     <a href="{{ route('tunjangan.edit', $tunjanganItem->id) }}" class="btn btn-sm btn-info">

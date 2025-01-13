@@ -5,10 +5,10 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header bg-dark text-white">Detail Slip Gaji</div>
+                    <div class="card-header">Detail Slip Gaji</div>
 
-                    <div class="card-body bg-dark text-white">
-                        <table class="table table-bordered table-dark">
+                    <div class="card-body">
+                        <table class="table table-bordered">
                             <tbody>
                                 <tr>
                                     <th scope="row">Kode Gaji</th>
@@ -51,12 +51,12 @@
                                     <td>
                                         <ul class="list-group mb-3">
                                             @forelse ($tunjangan as $item)
-                                                <li class="list-group-item bg-dark text-white">
+                                                <li class="list-group-item">
                                                     {{ $item->nama_tunjangan }}: Rp.
                                                     {{ number_format($item->jumlah_tunjangan, 2, ',', '.') }}
                                                 </li>
                                             @empty
-                                                <li class="list-group-item bg-dark text-white">Tidak ada tunjangan</li>
+                                                <li class="list-group-item">Tidak ada tunjangan</li>
                                             @endforelse
                                         </ul>
                                     </td>
@@ -67,12 +67,12 @@
                                     <td>
                                         <ul class="list-group mb-3">
                                             @forelse ($potongan as $item)
-                                                <li class="list-group-item bg-dark text-white">
+                                                <li class="list-group-item">
                                                     {{ $item->nama_potongan }}: - Rp.
                                                     {{ number_format($item->jumlah_potongan, 2, ',', '.') }}
                                                 </li>
                                             @empty
-                                                <li class="list-group-item bg-dark text-white">Tidak ada potongan</li>
+                                                <li class="list-group-item">Tidak ada potongan</li>
                                             @endforelse
                                         </ul>
                                     </td>

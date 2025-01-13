@@ -2,10 +2,10 @@
 
 @section('content')
     <div class="container">
-        <div class="row justify-content-center text-white">
+        <div class="row justify-content-center">
             <div class="col-lg-10">
-                <div class="card bg-dark text-white">
-                    <h4 class="card-header bg-dark">Edit Karyawan</h4>
+                <div class="card">
+                    <h4 class="card-header">Edit Karyawan</h4>
                     <div class="card-body">
                         <form action="{{ route('karyawan.update', $karyawan->id) }}" method="POST" enctype="multipart/form-data">
                             @csrf
