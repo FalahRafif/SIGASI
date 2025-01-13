@@ -1,4 +1,4 @@
-# Aplikasi Penggajian Berbasis Web - Sistem Informasi Akuntansi
+# Aplikasi Penggajian Berbasis Web
 
 ## Instalasi Tools (Localhost)
 
@@ -11,21 +11,21 @@
 
 1. Clone projek melalui terminal / command prompt / git bash dengan perintah:
    ```bash
-   git clone https://github.com/abdlmnf17/SIA_penggajian_sekolah_annasir.git
+   git clone https://github.com/FalahRafif/SIGASI.git
    ```
 
-2. Pindahkan folder (SIA_penggajian_sekolah_annasir) hasil clone ke direktori Xampp/htdocs/disini (Jika memakai xampp).
+2. Pindahkan folder (SIGASI) hasil clone ke direktori Xampp/htdocs/disini (Jika memakai xampp).
 
-3. Buka Vscode, buka folder dan pilih SIA_penggajian_sekolah_annasir yang tadi sudah di-clone.
+3. Buka Vscode, buka folder dan pilih SIGASI yang tadi sudah di-clone.
 
-4. Buka terminal di Vscode, ketik `composer install`, lalu tunggu sampai selesai.
+4. Buka terminal di Vscode, ketik `composer install --prefer-dist --ignore-platform-reqs`, lalu tunggu sampai selesai.
 5. Pastikan sukses dan berhasil 
 
 6. Setelah itu cari file env.example paling bawah, copy dan paste di tempat itu juga, lalu ubah namanya env.examplecopy menjadi`.env`, lalu ketik di terminal `php artisan key:generate`,
 
-7. Masuk ke dalam .env dan ubah bagian `DB_DATABASE=`, menjadi nama database yang akan digunakan, contohnya `DB_DATABASE=penggajian_sekolah_annasir`. Lalu ubah juga APP_NAME dengan nama aplikasinya, jika ingin mengcustom namanya, lalu untuk isi SEKOLAH_NAME juga silahkan ubah jika ingin memakai nama sekolah lain.
+7. Masuk ke dalam .env dan ubah bagian `DB_DATABASE=`, menjadi nama database yang akan digunakan, contohnya `DB_DATABASE=sigasi`. Lalu ubah juga APP_NAME dengan nama aplikasinya, jika ingin mengcustom namanya, lalu untuk isi SEKOLAH_NAME juga silahkan ubah jika ingin memakai nama sekolah lain.
 
-8. Buka phpMyAdmin, buat database baru berdasarkan nama yang ada di `.env`, yaitu `penggajian_sekolah_annasir`.
+8. Buka phpMyAdmin, buat database baru berdasarkan nama yang ada di `.env`, yaitu `sigasi`.
 
 9. Kembali ke Vscode, tambahkan terminal baru, lalu ketik `php artisan storage:link`, setelah berhasil ketik `php artisan migrate`, dan tunggu migrasi sampai selesai.
 
