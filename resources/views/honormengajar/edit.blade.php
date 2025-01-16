@@ -5,9 +5,9 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header bg-dark text-white">Update Data Honor Mengajar </div>
+                    <div class="card-header">Update Data Honor Mengajar </div>
 
-                    <div class="card-body bg-dark text-white">
+                    <div class="card-body">
                         <form method="POST" action="{{ route('honormengajar.update', $honormengajar->id) }}">
                             @csrf
                             @method('PUT')

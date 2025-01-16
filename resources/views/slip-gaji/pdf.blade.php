@@ -43,7 +43,7 @@
             border: 1px solid #ddd;
         }
         .info-table th {
-            background-color: #ff3d3d;
+            background-color: #046cba   ;
             color: white;
             text-align: left;
         }

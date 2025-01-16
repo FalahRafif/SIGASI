@@ -9,7 +9,8 @@
     <meta name="description" content="Aplikasi Penggajian">
     <meta name="author" content="SRI">
 
-    <title>Login Aplikasi Gaji</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
+        <link rel="icon" type="image/x-icon" href="/img/landingPage/navbar-logo.png" />
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

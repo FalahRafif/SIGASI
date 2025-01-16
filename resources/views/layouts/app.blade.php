@@ -9,6 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+        <link rel="icon" type="image/x-icon" href="/img/landingPage/navbar-logo.png" />
 
     <!-- Scripts CSS -->
     <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -83,6 +84,9 @@
                         <h6 class="collapse-header">Data Master</h6>
                         @if ($role === 'admin')
                             <a class="collapse-item" href="/user">User</a>
+                        @endif
+                        @if ($role === 'admin')
+                            <a class="collapse-item" href="/honormengajar">Honor</a>
                         @endif
                         <a class="collapse-item" href="/karyawan">Karyawan</a>
                         <a class="collapse-item" href="/tunjangan">Tunjangan</a>

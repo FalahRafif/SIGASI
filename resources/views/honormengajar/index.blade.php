@@ -30,15 +30,15 @@
 
         <br />
         <!-- Project Card Example -->
-        <div class="card shadow mb-4 text-white">
-            <div class="card-header py-3 bg-dark">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
                 <a href="#" class="btn btn-warning float-right" data-toggle="modal" data-target="#addHonorMengajarModal">
                     <i class="fas fa-plus-circle"></i> Tambah Honor Mengajar
                 </a>
                 <h4 class="m-15 font-weight-bold">{{ __('Daftar Honor Mengajar') }}</h4>
             </div>
-            <div class="card-body bg-dark">
-                <table id="dataTable" class="table table-bordered text-white" cellspacing="1"><br />
+            <div class="card-body">
+                <table id="dataTable" class="table table-bordered" cellspacing="1"><br />
                     <thead>
                         <tr align="center">
                             <th style="width: 5%">#</th>
